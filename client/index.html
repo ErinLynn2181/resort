@@ -1,0 +1,261 @@
+
+<html>
+<title>Resort Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Rubik', sans-serif;}
+</style>
+<body style="color:#FFFFFF">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-large" style="background-color: black">
+  <a href="#resort" class="w3-bar-item w3-button w3-mobile w3-text-white" ><i class="w3-margin-right"></i>Resort</a>
+  <a href="#accomadations" class="w3-bar-item w3-button w3-mobile w3-text-white w3-hover-gray">Accomadations</a>
+  <a href="#activities" class="w3-bar-item w3-button w3-text-white w3-hover-gray w3-mobile">Activities</a>
+ 
+  <a href="#contact" class="w3-bar-item w3-button w3-hover-gray w3-mobile w3-text-white">Reservations</a>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+  <img class="w3-image" src="https://static.pexels.com/photos/60217/pexels-photo-60217.jpeg" alt="Resort" style="min-width:1000px" width="1500" height="800">
+  <div class="w3-display-left w3-padding w3-col l6 m8">
+    <div class="w3-container" style="background-color: black">
+      <h2><i class="w3-margin-right"></i>Check Rates and Availability</h2>
+    </div>
+    <div class="w3-container w3-padding-8" style="color: #FFFFFF">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-calendar-o"></i> Check In</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-male"></i> Adults</label>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-child"></i>Children</label>
+          <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+          </div>
+        </div>
+        <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i>Find Rooms</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+  <div class="w3-container w3-margin-top" id="rooms">
+   
+ 
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      
+      <img src="https://static.pexels.com/photos/237393/pexels-photo-237393.jpeg" alt="Norway" style="width:100%">
+      <div class="w3-container" style="color: black">
+        <h3>Deluxe Room</h3>
+        <h6 class="w3-opacity">From $100</h6>
+        <p>Two Queen Beds</p>
+        <p>Optional King Bed</p>
+       
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i><i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose your Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://static.pexels.com/photos/164595/pexels-photo-164595.jpeg" alt="Norway" style="width:100%">
+      <div class="w3-container" style="color: black">
+        <h3>Ocean View Room</h3>
+        <h6 class="w3-opacity">From $200</h6>
+        <p>Two Queen Beds</p>
+        <p>Optional King Bed</p>
+       
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i><i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose your Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://static.pexels.com/photos/189333/pexels-photo-189333.jpeg" alt="Norway" style="width:100%">
+      <div class="w3-container" style="color: black">
+        <h3>Ocean View Suite</h3>
+        <h6 class="w3-opacity">From $300</h6>
+        <p>King Bed</p>
+        <p>Sleeper Sofa</p>
+      
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose your Room</button>
+      </div>
+    </div>
+    <div class="w3-panel w3-gray">
+     <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i></p>
+    </div>
+  
+
+<div class="w3-container w3-blue w3-cell" style="width: 25%" id="activities" >
+
+  
+      <ul class="w3-xlarge w3-center">Activies</ul>
+      <ul class="w3-large w3-center">Hawaiian Luaus</ul>
+      <ul class="w3-large w3-center">Sunset Sails</ul>
+      <ul class="w3-large w3-center">Whale Watching</ul>
+      <ul class="w3-large w3-center">Golf</ul>
+      <ul class="w3-large w3-center">Bike Tours</ul>
+      <ul class="w3-large w3-center">Jet Skiing</ul>
+      <ul class="w3-large w3-center">Hiking</ul>
+ <ul class="w3-large w3-center">Water Slide</ul></div>
+  <div class="w3-container  w3-cell">
+      <layer id="placeholderlayer"></layer><div id="placeholderdiv"></div>
+      <script language="JavaScript1.2">
+
+var howOften = 3; //number often in seconds to rotate
+var current = 0; //start the counter at 0
+var ns6 = document.getElementById&&!document.all; //detect netscape 6
+
+// place your images, text, etc in the array elements here
+var items = new Array();
+    items[0]="<a href='#' ><img alt='image0 (9K)' src='https://static.pexels.com/photos/24208/pexels-photo-24208.jpg' height='500' width='1000' border='0' /></a>"; //a linked image
+    items[1]="<a href='#'><img alt='image1 (9K)' src='https://static.pexels.com/photos/261429/pexels-photo-261429.jpeg' height='500' width='1000' border='0' /></a>"; //a linked image
+    items[2]="<a href='#'><img alt='image2 (9K)' src='https://static.pexels.com/photos/33478/golf-sunset-sport-golfer.png' height='500' width='1000' border='0' /></a>"; //a linked image
+   items[3]="<a href='#'><img alt='image3 (9K)' src='https://static.pexels.com/photos/69388/air-beautiful-beauty-blue-69388.jpeg' height='500' width='1000' border='0' /></a>"; //a linked image
+    items[4]="<a href='#'><img alt='image4 (9K)' src='https://static.pexels.com/photos/198696/pexels-photo-198696.jpeg' height='500' width='1000' border='0' /></a>"; //a linked image
+    items[5]="<a href='#'><img alt='image5 (18K)' src='https://static.pexels.com/photos/50911/pexels-photo-50911.jpeg' height='500' width='1000' border='0' /></a>"; //a linked image
+function rotater() {
+    document.getElementById("placeholder").innerHTML = items[current];
+    current = (current==items.length-1) ? 0 : current + 1;
+    setTimeout("rotater()",howOften*1000);
+}
+
+function rotater() {
+    if(document.layers) {
+        document.placeholderlayer.document.write(items[current]);
+        document.placeholderlayer.document.close();
+    }
+    if(ns6)document.getElementById("placeholderdiv").innerHTML=items[current]
+        if(document.all)
+            placeholderdiv.innerHTML=items[current];
+
+    current = (current==items.length-1) ? 0 : current + 1; //increment or reset
+    setTimeout("rotater()",howOften*1000);
+}
+window.onload=rotater;
+//-->
+</script>
+  </div></div>
+
+  
+  <div class=" w3-teal w3-display-hover">
+    <h6><i class="fa fa-info w3-black  w3-padding w3-margin-left"></i>  
+
+
+  
+  
+  <div class="w3-row-padding w3-padding-16 w3-text-black w3-large" style="text-shadow:1px 1px 0 #444"">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="https://static.pexels.com/photos/373948/pexels-photo-373948.jpeg" alt="Cinque Terre" style="width:100%">
+        <span class="w3-display-bottomleft w3-padding">The Cafe</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://static.pexels.com/photos/258106/pexels-photo-258106.jpeg" alt="New York" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Pool Bar</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://static.pexels.com/photos/322719/pexels-photo-322719.jpeg" alt="Lounge" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">The Lounge</span>
+          </div>
+        </div>
+      </div>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://static.pexels.com/photos/51136/pexels-photo-51136.jpeg" alt="Pisa" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Casual Dining</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="https://static.pexels.com/photos/6269/dinner-meal-table-wine.jpg" alt="Paris" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Private Dining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container w3-padding-32 w3-black w3-white w3-card-2 w3-hover-opacity-off" style="margin:32px 0;">
+ 
+ 
+    <label>Enter your email address to receive the latest promotions.</label>
+    <input type="text" placeholder="Email">
+    <button type="button" class="w3-button w3-indigo w3-border w3-margin-top">Subscribe</button>
+  </div>
+<div class="w3-row w3-large w3-center" style="margin:32px 0">
+    <div class="w3-third"><i class="fa fa-map-marker w3-text-teal"></i>Maui, Hawaii</div>
+    <div class="w3-third"><i class="fa fa-phone w3-text-teal"></i> Phone: </div>
+    <div class="w3-third"><i class="fa fa-envelope w3-text-teal"></i> Email: Resort@email.com</div>
+    </div></div>
+                                                                </div></div>
+
+<!-- End page content -->
+
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-display-bottom w3-margin-top w3-center">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-center w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
